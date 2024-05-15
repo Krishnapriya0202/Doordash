@@ -66,3 +66,9 @@ body{
 .sections .js{
     background: yellow;
 }
+.sections .git{
+    background: red;
+}
+.sections .react{
+    background: green;
+}
