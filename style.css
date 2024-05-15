@@ -63,3 +63,6 @@ body{
     font-size: 40px;
     font-weight: 500;
 }
+.sections .js{
+    background: yellow;
+}
