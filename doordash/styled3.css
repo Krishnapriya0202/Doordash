@@ -16,7 +16,7 @@ a:focus {
     color: inherit;
 }
 ul{
-    list-syle: none;
+    list-style: none;
     display: flex;
 }
 li{
@@ -104,7 +104,8 @@ li:hover{
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('header.png')
+    background-image: url('header.png');
+    background-position: center;
 }
 
 /* search section */
@@ -258,12 +259,12 @@ li:hover{
     margin-bottom: 30px;
     
 }*/
-.f2{
+/*.f2{
     width: 120;
     height: auto;
     margin-left: 500px;
     position: relative;
-}
+}*/
 
 /*#order-btn{
     background-color: red;
@@ -317,7 +318,7 @@ li:hover{
     display: flex;
     line-height: 1.8em;
 }
-tlf1{
+.tlf1{
     width: 190px;
 }
 .tlf2{
@@ -339,7 +340,7 @@ tlf1{
 .trf1{
     width: 275px;
 }
-trf2{
+.trf2{
     width: 200px;
 }
 .mid-footer{
