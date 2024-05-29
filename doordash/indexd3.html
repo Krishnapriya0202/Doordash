@@ -13,15 +13,19 @@
           rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <body>
+        <body>
         <div class="top">
             <div class="top-nav">
                 <div class="top-nav-left">
                     <img id="header-logo" src="main_logo.png" alt="">
-                    
+                   
                     <div class="top-nav-right">
-                        <div id="signUp"><a href="#">Sign In</a></div>
-                        <div id="signBtn"><a href="#">Sign Up</a></div>
+                        <div class="login-btn">
+                            <button class="loginbtn" id="login">Sign In</button>
+                            <button class="signup" id="sign-up">Sign Up</button>
+                        </div>
+                        <!--<div id="signUp"><a href="#">Sign In</a></div>
+                        <div id="signBtn"><a href="#">Sign Up</a></div>-->
                     </div>
                 </div>
                 <div class="top-heading">
@@ -36,18 +40,24 @@
                             placeholder="Enter delivery address"
                             type="text"
                             >
+                          
                             <input id="searchBarSubmit" type="button" value="→">
                         </div>
+                        <div class="container">
+                            <button class="sign-in-button">Sign in for saved address</button>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
+        </div>
             <div class="second">
                 <div class="second-top">
                     <div class="sec-top-left">
-                        <img src="doordash2.svg" clas="mid-pics" alt="">
+                        <img src="doordash2.svg" class="mid-pics" alt="">
                         <h2>Become a <br>Dasher</h2>
                         <p>As a delivery driver, you'll<br> make reliable money-working <br>anytime, anywhere.</p>
-                        <a href="#">Start earning→</a>
+                        <a href="#">Start earning→</a> 
                     </div>
                     <div class="sec-top-mid">
                         <img src="doordash3.svg" class="mid-pics" alt="">
@@ -64,13 +74,13 @@
                 </div>
                 <div class="second-bottom">
                     <div class="sec-bot-left">
-                        <h1 style="text-align: center">Everything you <br>crave,delivered.</h1>
-                        <h2 style="text-align: center;">Your favorite local restaurants</h2>
+                        <h1 >Everything you <br>crave,delivered.</h1>
+                        <h2>Your favorite local restaurants</h2>
                         <div class=".s-b-l">
                             <p text-align="center">
                                 Get a slice of pizza or the whole pie delivered,or pick <br>
                                 up house lo mein from the Chinese takeout spot you;ve<br>
-                                been meaning to try.
+                                been meaning to try.</p>
                             <br><br>
                                 <button id="find-res-btn">Find Restaurants</button>
                         </div>
@@ -79,55 +89,350 @@
                     <img src="doordash5.png" class="f1" alt="">
                 </div>
             </div>
-        </div>
+        
         <br>
-        <div class="third">
+        <!--<div class="third">
             <div class="third-left">
                 <img src="doordash6.png" class="f2" alt="">
             </div>
             <div class="third-right">
-                <h1></h1>
+                <h1>DashPass is delivery fot less</h1>
                 <div class="t-r">
-                    <p>
-                                        </p>
+                    <p>Menbers get a $0 delivery fee on DashPass orders, 5% back on pickup orders,and so much more. Plus, it's free for 30days
+                         </p>
                     <button id="order-btn"></button>
                 </div>
             </div>
+        </div>-->
+        <!--<div class="DashPass">
+            <img src="doordash6.png" alt="">
+            <div class="content">
+                <div class="content-right">
+                    <h1>DashPass is <br>delivery for less</h1>
+                    <div class="c-r">         
+                        <p>Members get a $0 delivery fee on DashPass orders, 5% <br>back on pickup orders, and so much more.Plus, it's free <br>for 30 days.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>-->
+       <!--- <div class="third">
+            <div class="third-bottom">
+                <div class="third-bottom-left">
+                    <h1>DashPass is delivery for less</h1>
+                    <div class=".t-b-l">
+                        <p text-align="center">
+                            Get a slice of pizza or the whole pie delivered,or pick up house to mein from the chinese takeout spot you've been meaning to try.
+                        </p>
+                        <br><br>
+                        <button id="get-btn">Get DashPass</button>
+                    </div>
+                </div>
+                <div class="third-bottom-right"></div>
+                <img src="doordash6.png" class="f2" alt="">
+            </div>
+        </div>-->
+
+        <div class="third">
+            <div class="third-bottom">
+                <div class="third-bottom-left"></div>
+                <img src="doordash6.png" class="f2" alt="">
+                <div class="third-bottom-right">
+                    <h1>DashPass is <br>delivery for less</h1>
+                    <div class=".t-b-r">
+                        <p text-align="center">
+                            Members get a$0 delivery fee on DashPasss orders,5%<br>
+                            back on pickup orderds,and so much more.Plus,it's free<br>
+                            for 30 days.
+                        </p>
+                        <br><br>
+                        <button id="get-btn">Get DashPass</button>
+                    </div>
+                </div>
+            </div>
         </div>
+        <br>
+   <div class="Grocery">
+    
+       <div class="Grocery-head">
+          <h1 class="centered-heading">Get grocery and <br>convenience store <br>essentials</h1>
+       </div>
+       <div class="Grocery-h2">
+          <h3 class="centered-heading">Grocery delivery,exactly hoe you want it.</h3>
+        </div>
+      <div class="Grocery-p">
+          <p class="centered-paragraph">Shop from home and fill your cart with fresh produce,frozen entrees,deli <br>delights,and more.</p>
+          <br><br>
+           <button id="shop-btn">Shop Groceries</button>
+      </div>
+
+   </div>
+<br>
+   <div class="four">
+    <div class="fourth-bottom">
+        <div class="fourth-bottom-left">
+            <h1>Convenience stores at your doorstep</h1>
+            <div class=".f-b-l">
+                <p text-align="center">
+                    Stock up on snacks,household essentials,candy,or <br>vitamins-all delivered in under an hour.
+                </p>
+                <br><br>
+                <button id="shopnow-btn">Shop Now</button>
+            </div>
+        </div>
+        <div class="fourth-bottom-right"></div>
+        <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/convenience_desktop.png" class="f3" alt="">
+    </div>
+   </div>
+   <div class="five">
+     <h1>Helping you with to-dos and <br>gifting</h1>
+      <div class="fifth-bottom">
+        <div class="fifth-bottom-item">
+            <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/package_pickup_desktop.png" class="mid-photos" alt>
+            <h2>Return packages from<br> home</h2>
+            <p>Request a package with just a few taps and get your returns dropped<br>off at carriers like UPS,FedEx,and USPS.</p>
+            <br>
+            <button id="try-btn">Try Package Pickup</button> 
+        </div>
+        <div class="fifth-bottom-item">
+            <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/flowers_desktop.png" class="mid-photos" alt="">
+            <h2>Flowers for any occasion</h2>
+            <p>Shop hand-picked and thoughtfully-arranged blooms from florists near you.</p>
+            <br>
+            <button id="send-btn">Send Flowers</button>
+        </div>
+        <div class="fifth-bottom-item">
+                <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/alcohol_desktop.png" alt="">
+                <h2>Restock the minibar</h2>
+                <p>Hosting a get-together or need or need a special cocktail ingredient?Get<br> liquor,beer,mixers,champagne,and wine delivered fast.*</p>
+                    <br><br>
+                    <button id="alcohol-btn">Shop Alcohol</button>
+                        <br>
+                        <p>*Must be 21+. Enjoy responsibly</p>
+        </div>
+        <div class="fifth-bottom-item">
+            <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/pet_supplies_desktop.png" alt="">
+            <h2>What your pets need,and <br>want</h2>
+                <p>Finally,something cat people and dog people agree on-pet supplies<br>delivery.Shop pet food,chew toys,and even costumes. </p>  
+                    <br><br>
+                    <button id="prt-btn">Get Pet Supplies</button>         
+        </div>
+  
+      </div>  
+    </div> 
+    <br><br>
+   
+   <div class="unlock">
+      <h1>Unlocking opportunity for<br>Dasher and business</h1>
+      <div class="unlock-bottom">
+        <div class="unlock-bottom-left">
+            <h1>Sign up to dash and get paid</h1>
+             <div class=".u-b-l">
+                <p text-align="center">
+                    Deliver with the #1 Food and Drink App in the U.S.,set<br>
+                    your own schedule,and start earning cash anytime,anywhere.
+                </p>
+                   <br><br>
+                   <button id="dasher-btn">Become a Dasher</button>
+            
+             </div>
+               
+        </div>
+            <div class="unlock-bottom-right">
+                <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/become_a_dasher_desktop.png" class="f4" alt="">
+
+            </div>
+      </div>
+   </div>
+
+   <br><br>
+
+   <div class="grow">
+        <div class="grow-bottom">
+            <div class="grow-bottom-left">
+              <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/work_with_doordash_desktop.png" class="f5" alt="">
+            </div>
+             
+        
+
+          <div class="grow-bottom-right">
+               <h1>Grow your <br>business with <br>DoorDash</h1>
+                  <div class=".g-b-r">
+                      <p text-align="center">
+                         Business large and small partner with DoorDash to<br>reach new customers,increase order volumn,and drive<br>
+                         more sales.
+                       </p>
+                     <br><br>
+                       <buttom id="partner-btn">Become a Partner</buttom>
+                    </div>
+            </div>
+        </div>
+   </div>
+
+   <br>
+     <div class="more">
+        <h2>Get more from your neighbourhood</h2>
+     </div>
+     <div class="second-more">
+        <h3>Top Cities</h3>
+     </div>
+     <div class="six">
+           <div class="place">
+                <div class="place-list">
+                     <div class="place-column">
+                         <div></div>
+                           <ul class="place-links">
+                               <li>New York</li>
+                               <br>
+                               <li>Brooklyn</li><br>
+                               <li>Atlanda</li><br>
+                           </ul>
+                         </div>
+                      <div class="place-column">
+                         <div></div>
+                           <ul class="place-links">
+                            <li>Los Angeles</li><br>
+                            <li>San Diego</li><br>
+                            <li>Queens</li><br>
+                           </ul>
+                      </div>
+                        <div class="place-column">
+                             <div></div>
+                              <ul class="place-links">
+                                <li>Tornoto</li><br>
+                                <li>Las Vegas</li><br>
+                                <li>Vancouver,BC</li>
+                              </ul>
+                        </div>
+                        <div class="place-column">
+                            <div></div>
+                            <ul class="place-links">
+                                <li>Chicago</li><br>
+                                <li>San Francisco</li><br>
+                                <li>Miami</li><br>
+                            </ul>
+                        </div>
+                        <div class="place-column">
+                            <div></div>
+                            <ul class="place-links">
+                                <li>Houston</li><br>
+                                <li>Seattle</li><br>
+                                <li>San Antonio</li><br>
+                            </ul>
+                        </div>
+                </div>
+           </div>
+     </div>
+
+      <br>
+
+      <!--<div class="footer-section">
+            <div class="footer">
+                 <div class="footer-links">
+                     <div class="footer-column">
+                          <div></div>
+                            <ul class="column-links">
+                                  <li><a href="">Alcohol Delivery</a></li><br>
+                                  <li><a href="">Back To School Delivery</a></li><br>
+                                    <li><a href="">Beauty Stores</a></li><br>
+                                    <li><a href="">Beauty Supply</a></li>
+                            </ul>
+                     </div>
+                         <div class="footer-column">
+                              <ul class="column-links">
+                                 <li><a href=""></a>Dashmart Near Me</li><br>
+                                 <li><a href=""></a>Deck The Doorstep</li><br>
+                                 <li><a href="">Flower delivery</a></li><br>
+                                </ul>
+                            </div>
+                            <div class="footer-column">
+                                   <ul class="column-links">
+                                     <li><a href="">Halloween</a></li><br>
+                                     <li><a href="">Large Group Orders</a></li><br>
+                                     <li><a href="">Medicine DElivery</a></li>
+                                   </ul>
+                            </div>
+                             <div class="footer-column">
+                                  <ul class="column-links">
+                                     <li><a href="">Snap Ebt</a></li><br>
+                                     <li><a href="">Seasonal Holidays</a></li>
+                                  </ul>
+                             </div>
+                 </div>
+            </div>
+      </div>-->
+
+      <!--<div class="footer">
+          <div class="top-footer">
+              <div class="top-footer-left">
+                   <h2>Popular Categories</h2>
+                  <div class="tfl">
+                     <div class="tfl1">
+                         <ul class="footer-links">
+                            <li>Alcohol Delivery</li><br>
+                            <li>Back To School Delivery</li><br>
+                            <li>Beauty Stores</li><br>
+                            <li>Beauty Supply</li><br>
+                            <li>Catering Near Me</li>
+                         </ul>
+                     </div>
+                     <div class="tfl2">
+                         <ul class="footer-links">
+                            <li>Convenience Stores Canada</li><br>
+                            <li>Dashmart Near Me</li><br>
+                            <li>Deck The Doorstep</li><br>
+                            <li>Drugstores Canada</li><br>
+                            <li>Flower Delivery</li><br>
+                         </ul>
+                     </div>
+                      <div class="tfl3">
+                          <ul class="footer-links">
+                            <li>Grocery Delivery Canada</li><br>
+                            <li>Halloween</li><br>
+                            <li>Large Group Orders</li><br>
+                            <li>Medicine Delivery</li><br>
+                            <li>Mother's Day</li><br>
+
+                          </ul>
+                      </div>
+                      <div class="tfl4">
+                            <ul class="footer-links">
+                                <li>Pet Store Near Me</li><br>
+                                <li>Retail Stores Near me</li><br>
+                                <li>Seasonal Holidays</li><br>
+                                <li>Snap Ebt</li><br>
+                                <li>Valentines Day</li>
+                            </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>-->
+        
         <div class="footer">
             <div class="top-footer">
                 <div class="top-left-footer">
-                    <h2 class="footer-header">Top Cities</h2>
+                    <h2 class="footer-header">Popular Categories</h2>
                     <div class="tlf">
                         <div class="tlf1">
-                            <li>New York City</li>
-                            <li>Los Angeles</li>
-                            <li>Toronto</li>
-                            <li>Chicago</li>
-                            <li>Houston</li>
-                            <li>Brooklyn</li>
+                            <li>Alcohol Delivery</li>
+                            <li>Back To School Delivery</li>
+                            <li>Beauty Stores</li>
+                            <li>Beauty Supply</li>
+                            <li>Catering Near Me</li>
+                            <!--<li>Brooklyn</li>
                             <li>San Diego</li>
-                            <li>Las Vegas</li>
+                            <li>Las Vegas</li>-->
                             </div>
                             <div class="tlf2">
-                            <li>San Francisco</li>
-                            <li>Seattle</li>
-                            <li>Atlanta</li>
-                            <li>Queens</li>
-                            <li>Vancouver,BC</li>
-                            <li>Miami</li>
-                            <li>San Antonio</li>
-                                             
-                        </div>
-                        <div class="tlf3">
                             <li>Convenience Stores Canada</li>
                             <li>Dashmart Near Me</li>
                             <li>Deck The Doorstep</li>
                             <li>Drugstores Canada</li>
                             <li>Flower Delivery</li>
-                            
-                            
-                    
+                            <!--<li>Miami</li>
+                            <li>San Antonio</li>-->
+                                             
                         </div>
                         <div class="tlf3">
                             <li>Grocery Delivery Canada</li>
@@ -137,11 +442,21 @@
                             <li>Mother's Day</li>
                             
                             
+                    
+                        </div>
+                        <div class="tlf4">
+                            <li>Pet Store Near Me</li>
+                            <li>Retail Stores Near Me</li>
+                            <li>Seasonal Holidays</li>
+                            <li>Snap Ebt</li>
+                            <li>Valentines Day</li>
+                            
+                            
                           
                         </div>
                     </div>
                 </div>
-                <div class="top-right-footer">
+                <!--<div class="top-right-footer">
                     <h2 class="footer-header">Top Cuisines</h2>
                     <div class="trf">
                         <div class="trf1">
@@ -165,13 +480,15 @@
                             <li>Restaurants</li>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
             <div class="mid-footer">
                 <div class="mid-left-footer">
+                    
                     <div class="mlf">
                         <div class="mlf1">
                             <h2 class="footer-header">Get to Know Us</h2>
+    
                             <li>About Us</li>
                             <li>Careers</li>
                             <li>Investors</li>
@@ -196,15 +513,25 @@
                         <div class="mlf3">
                             <h2 class="footer-header"> Doing Business</h2>
                             <li>Become a Dasher</li>
-                            <li>Be a Partner Restaurant</li>
+                            <li>List Your Business</li>
                             <li>Get Dashers for Deliveries</li>
                             <li>Get DoorDash for Business</li>
                         </div>
                       </div>
                 </div>
-                <div class="mid-right-footer"></div>
+                <div class="mid-right-footer">
+                    <div class="mrf">
+                        <div class="mrf1">
+                           <img class="app" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNDhweCIgd2lkdGg9IjE0NHB4IiBmaWxsPSJ2YXIoLS11c2FnZS1jb2xvci1iYWNrZ3JvdW5kLWRlZmF1bHQpIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEzMSA0NCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik05NS43NTIsOS45NjZsMC4wNywwLjg2MWgwLjAzNmMwLjI1OS0wLjQ0OCwwLjg4My0wLjk5LDEuODM4LTAuOTljMS4wMDIsMCwyLjAzOSwwLjY0OCwyLjAzOSwyLjQ2M3YzLjQwNiBoLTEuNDV2LTMuMjQyYzAtMC44MjUtMC4zMDctMS40NS0xLjA5Ni0xLjQ1Yy0wLjU3OCwwLTAuOTc4LDAuNDEzLTEuMTMyLDAuODQ5Yy0wLjA0NywwLjExOC0wLjA3LDAuMjk1LTAuMDcsMC40NnYzLjM4M2gtMS40NSB2LTQuMDMxYzAtMC42NjEtMC4wMjQtMS4yMTQtMC4wNDctMS43MDlIOTUuNzUyeiIvPjxyZWN0IHg9Ijc0LjU4OCIgeT0iNy4zMzgiIHdpZHRoPSIxLjQ0OSIgaGVpZ2h0PSI4LjM2OCIvPjxwYXRoIGQ9Ik01NC41Miw3LjU3M2MwLjQ5NSwwLDAuODAyLDAuMzQyLDAuODEzLDAuNzljMCwwLjQyNC0wLjMxOCwwLjc3OC0wLjgyNSwwLjc3OCBjLTAuNDg0LDAtMC44MDEtMC4zNTQtMC44MDEtMC43NzhDNTMuNzA3LDcuOTE2LDU0LjAzNiw3LjU3Myw1NC41Miw3LjU3M3oiLz48cmVjdCB4PSI1My43ODkiIHk9IjkuOTY2IiB3aWR0aD0iMS40NDkiIGhlaWdodD0iNS43NCIvPjxwYXRoIGQ9Ik00My43MDcsMTUuNzA2SDQyLjI4bC0yLjEzMy01Ljc0aDEuNTY4bDAuOTMsMi45MTFjMC4xNjUsMC41MDcsMC4yODMsMC45NjcsMC4zODksMS40MzhoMC4wMzYgYzAuMTA1LTAuNDcyLDAuMjM2LTAuOTIsMC4zODktMS40MzhsMC45Mi0yLjkxMWgxLjUyMUw0My43MDcsMTUuNzA2eiIvPjxyZWN0IHg9IjU3LjUxNSIgeT0iNy4zMzgiIHdpZHRoPSIxLjQ0OSIgaGVpZ2h0PSI4LjM2OCIvPjxwYXRoIGQ9Ik04Mi43OTUsMzMuNTU5Yy0xLjAxMiwwLjkwMy0yLjQxMywxLjM1MS00LjIxMSwxLjM1MWMtMS42NjYsMC0yLjk5OS0wLjMyMi00LjAwNS0wLjk2MWwwLjU3NS0yLjA2MyBjMS4wODUsMC42MzksMi4yNzYsMC45NjMsMy41NzIsMC45NjNjMC45MzcsMCwxLjY2MS0wLjIxMywyLjE4MS0wLjYzYzAuNTE3LTAuNDE5LDAuNzc3LTAuOTgsMC43NzctMS42OTIgYzAtMC42MTgtMC4yMTQtMS4xNDYtMC42NC0xLjU3NmMtMC40MzItMC40MjgtMS4xMzctMC44MjItMi4xMzItMS4xOTJjLTIuNzAzLTEuMDA2LTQuMDU3LTIuNDgyLTQuMDU3LTQuNDIyIGMwLTEuMjY5LDAuNDcyLTIuMzExLDEuNDI5LTMuMTIxYzAuOTU1LTAuODA4LDIuMjItMS4yMTQsMy43OTctMS4yMTRjMS40MDUsMCwyLjU3NSwwLjI0NiwzLjUwOSwwLjczMmwtMC42MjUsMi4wMTggYy0wLjg3MS0wLjQ3Mi0xLjg2MS0wLjcxMi0yLjk2NS0wLjcxMmMtMC44NzMsMC0xLjU1OCwwLjIyMi0yLjA1LDAuNjM5Yy0wLjQxMSwwLjM4OC0wLjYxOCwwLjg1NC0wLjYxOCwxLjQwMyBjMCwwLjYwNywwLjIzNywxLjExMywwLjcxLDEuNTE3YzAuNDE0LDAuMzY1LDEuMTYzLDAuNzYxLDIuMjQ1LDEuMTg4YzEuMzM0LDAuNTMxLDIuMzA5LDEuMTYyLDIuOTM4LDEuODgyIGMwLjYyNSwwLjcxOCwwLjk0LDEuNjExLDAuOTQsMi42NzlDODQuMTY1LDMxLjY2NSw4My43MDUsMzIuNzM4LDgyLjc5NSwzMy41NTl6Ii8+PHBhdGggZD0iTTkxLjUyNCwyNS4zOTVoLTIuNzMzdjUuNDE3YzAsMS4zNzQsMC40ODUsMi4wNTYsMS40NDksMi4wNTZjMC40NDMsMCwwLjgwNy0wLjAzMywxLjA5OS0wLjEwOGwwLjA3LDEuODc2IGMtMC40OSwwLjE4My0xLjEzMSwwLjI3Ni0xLjkyNiwwLjI3NmMtMC45NzMsMC0xLjc0My0wLjI5NC0yLjI5MS0wLjg5NGMtMC41NTUtMC41OTMtMC44MjktMS41OTYtMC44MjktMy4wMDJ2LTUuNjIxaC0xLjYyNlYyMy41NCBoMS42MjZWMjEuNWwyLjQyOC0wLjczM3YyLjc3M2gyLjczM1YyNS4zOTV6Ii8+PHBhdGggZD0iTTEwNC4yNDIsOS45NjZoMC44MTNWOC44OTNsMS40MjctMC40MDF2MS40NzRoMS4zNzh2MS4wODRoLTEuMzc4djIuNTM0YzAsMC43MDgsMC4xODgsMS4wNjEsMC43NDIsMS4wNjEgYzAuMjU5LDAsMC40MDEtMC4wMTIsMC41NjYtMC4wNTlsMC4wMjQsMS4wOTZjLTAuMjEzLDAuMDgyLTAuNjAxLDAuMTU0LTEuMDQ5LDAuMTU0Yy0wLjU0MiwwLTAuOTc5LTAuMTc3LTEuMjUtMC40NzIgYy0wLjMxOC0wLjMzLTAuNDYtMC44NjEtMC40Ni0xLjYxNVYxMS4wNWgtMC44MTNWOS45NjZ6Ii8+PHBhdGggZD0iTTExMC41OTgsMjUuNzE4Yy0wLjI0NC0wLjA0NC0wLjUwNi0wLjA2My0wLjc4LTAuMDYzYy0wLjg3MSwwLTEuNTQyLDAuMzI5LTIuMDE3LDAuOTg0IGMtMC40MTQsMC41ODItMC42MTksMS4zMDYtMC42MTksMi4xOTl2NS44NDdoLTIuNDc2di03LjYzOWMwLTEuMjc3LTAuMDIyLTIuNDQ3LTAuMDY2LTMuNTA1aDIuMTU1bDAuMDkyLDIuMTMzaDAuMDY4IGMwLjI1OC0wLjczMSwwLjY2OS0xLjMyMiwxLjIzOC0xLjc2MmMwLjU1MS0wLjQwMiwxLjE0OS0wLjU5NSwxLjc5MS0wLjU5NWMwLjIyNywwLDAuNDM1LDAuMDEyLDAuNjE1LDAuMDQyVjI1LjcxOHoiLz48cGF0aCBkPSJNMTEwLjk3NCwxMi4yNjR2My40NDJoLTEuNDQ5VjcuMzM4aDEuNDQ5djMuNDA2aDAuMDI0YzAuMTc3LTAuMjcxLDAuNDI1LTAuNDk1LDAuNzE5LTAuNjQ4IGMwLjI5NS0wLjE2NiwwLjYzNi0wLjI2LDEuMDAyLTAuMjZjMC45NzgsMCwyLjAwNCwwLjY0OCwyLjAwNCwyLjQ4N3YzLjM4M2gtMS40NXYtMy4yMjljMC0wLjgyNS0wLjMwNy0xLjQ2Mi0xLjEwOC0xLjQ2MiBjLTAuNTY2LDAtMC45NjcsMC4zNzgtMS4xMzEsMC44MTRDMTEwLjk4NiwxMS45NTgsMTEwLjk3NCwxMi4xMTEsMTEwLjk3NCwxMi4yNjR6Ii8+PHBhdGggZD0iTTM3LjE1MSw3Ljc2MkgzNS4zbC0yLjU0Nyw3Ljk0NGgxLjQ5N2wwLjY4NC0yLjI1MWgyLjUxMWwwLjcxOCwyLjI1MWgxLjU2N0wzNy4xNTEsNy43NjJ6IE0zNS4xNzEsMTIuMzU5IGwwLjYxMi0xLjk1N2MwLjEzLTAuNDcyLDAuMjYtMS4wMjUsMC4zNzctMS40ODVoMC4wMjVjMC4xMTgsMC40NTksMC4yNDcsMS4wMDEsMC40MDEsMS40ODVsMC42MjQsMS45NTdIMzUuMTcxeiIvPjxwYXRoIGQ9Ik01Ni42MTcsMjQuODczYy0wLjg4NC0xLjA0Mi0xLjk3OC0xLjU1OC0zLjI5My0xLjU1OGMtMS42ODQsMC0yLjkzNSwwLjY2NC0zLjc2NSwxLjk5aC0wLjA0M0w0OS4zOCwyMy41NCBoLTIuMTc4YzAuMDYzLDEuMjUyLDAuMDk1LDIuNDcsMC4wOTUsMy42NjJ2MTIuMDAxaDIuNDc1di01Ljg1MmMwLjY0NCwxLjA1OSwxLjcwMiwxLjU4NSwzLjE4MSwxLjU4NSBjMS4zNjYsMCwyLjUxNC0wLjQ4OSwzLjQzNC0xLjQ2NGMxLjAzMy0xLjEwMywxLjU0OC0yLjU5NSwxLjU0OC00LjQ5NkM1Ny45MzQsMjcuMjgyLDU3LjQ5MywyNS45MTEsNTYuNjE3LDI0Ljg3M3ogTTU0LjYzMSwzMS45MSBjLTAuNTE5LDAuNzIxLTEuMjUsMS4wNzctMi4xOCwxLjA3N2MtMC43OTQsMC0xLjQ0LTAuMjgxLTEuOTM2LTAuODM0Yy0wLjUtMC41NTgtMC43NDQtMS4yNDMtMC43NDQtMi4wNTV2LTEuODU1IGMwLTAuMiwwLjAzOC0wLjQ1LDAuMTEzLTAuNzU3YzAuMTU0LTAuNjU4LDAuNDc3LTEuMTg5LDAuOTc1LTEuNTk5YzAuNDk4LTAuNDA1LDEuMDQ5LTAuNjA2LDEuNjYtMC42MDYgYzAuOTAzLDAsMS42MiwwLjM3NCwyLjE1OCwxLjEwNGMwLjQ5LDAuNzAxLDAuNzMxLDEuNTk3LDAuNzMxLDIuNjc5QzU1LjQwOCwzMC4yNDUsNTUuMTUxLDMxLjE5Miw1NC42MzEsMzEuOTF6Ii8+PHBhdGggZD0iTTEwMS43MjgsMjQuOTQ0Yy0wLjk5NC0xLjA5LTIuMzA3LTEuNjI4LTMuOTQ5LTEuNjI4Yy0xLjY5NywwLTMuMDQyLDAuNTQzLTQuMDQ0LDEuNjQ4IGMtMS4wMDEsMS4wOTktMS41LDIuNTE1LTEuNSw0LjI0MWMwLDEuNjQ4LDAuNDgzLDMuMDIyLDEuNDUzLDQuMTA1YzAuOTY5LDEuMDg2LDIuMjc3LDEuNjI3LDMuOTE1LDEuNjI3IGMxLjY5MywwLDMuMDUzLTAuNTY0LDQuMDgtMS42OTNjMC45NzgtMS4xMDQsMS40NjQtMi41MDUsMS40NjQtNC4yMjJDMTAzLjE0NywyNy4zNTcsMTAyLjY3MywyNS45OTIsMTAxLjcyOCwyNC45NDR6IE05OS44ODgsMzEuNzI1Yy0wLjUzMiwwLjkwNi0xLjI3NiwxLjM1MS0yLjIxOCwxLjM1MWMtMC45NjgsMC0xLjcxNy0wLjQ0LTIuMjQ3LTEuMzI0Yy0wLjQ0OC0wLjczMS0wLjY2OC0xLjYwNS0wLjY2OC0yLjYzIGMwLTEuMDUzLDAuMjE5LTEuOTQyLDAuNjY4LTIuNjcxYzAuNTE3LTAuODg1LDEuMjc1LTEuMzI1LDIuMjY1LTEuMzI1YzAuOTY0LDAsMS43MDMsMC40NCwyLjIzLDEuMzI1IGMwLjQ0MSwwLjcyOSwwLjY2MiwxLjYwOCwwLjY2MiwyLjYyOFMxMDAuMzUsMzAuOTg2LDk5Ljg4OCwzMS43MjV6Ii8+PHBhdGggZD0iTTY4Ljg1OCwyNC44NzNjLTAuODc5LTEuMDQyLTEuOTc2LTEuNTU4LTMuMjkxLTEuNTU4Yy0xLjY4MSwwLTIuOTMsMC42NjQtMy43NjEsMS45OWgtMC4wNDNMNjEuNjIsMjMuNTQgaC0yLjE3M2MwLjA2LDEuMjUyLDAuMDkyLDIuNDcsMC4wOTIsMy42NjJ2MTIuMDAxaDIuNDc3di01Ljg1MmMwLjY0NCwxLjA1OSwxLjcwNCwxLjU4NSwzLjE3OSwxLjU4NSBjMS4zNjksMCwyLjUxMi0wLjQ4OSwzLjQzNS0xLjQ2NGMxLjAzMy0xLjEwMywxLjU0OC0yLjU5NSwxLjU0OC00LjQ5NkM3MC4xNzcsMjcuMjgyLDY5LjczOSwyNS45MTEsNjguODU4LDI0Ljg3M3ogTTY2Ljg3NiwzMS45MSBjLTAuNTIsMC43MjEtMS4yNDUsMS4wNzctMi4xODIsMS4wNzdjLTAuNzkxLDAtMS40MzgtMC4yODEtMS45MzQtMC44MzRjLTAuNDk5LTAuNTU4LTAuNzQ0LTEuMjQzLTAuNzQ0LTIuMDU1di0xLjg1NSBjMC0wLjIsMC4wMzYtMC40NSwwLjExMi0wLjc1N2MwLjE1NC0wLjY1OCwwLjQ4LTEuMTg5LDAuOTc3LTEuNTk5YzAuNDk5LTAuNDA1LDEuMDQ3LTAuNjA2LDEuNjYxLTAuNjA2IGMwLjkwMSwwLDEuNjIsMC4zNzQsMi4xNTksMS4xMDRjMC40ODgsMC43MDEsMC43MzQsMS41OTcsMC43MzQsMi42NzlDNjcuNjU4LDMwLjI0NSw2Ny4zOTcsMzEuMTkyLDY2Ljg3NiwzMS45MXoiLz48cGF0aCBkPSJNNDAuNzgzLDE5LjIzMWgtMy4wNzZsLTQuOTcxLDE1LjQ1M2gyLjU2NWwxLjM3OC00LjUzNmg1LjAyM2wxLjQ0Myw0LjUzNmgyLjYzOUw0MC43ODMsMTkuMjMxeiBNMzcuMTEzLDI4LjI0MyBsMS4yODQtNC4wMzZjMC4zMzktMS4yODYsMC41ODEtMi4yNTUsMC43MzYtMi45MTJoMC4wNDNjMC4zOCwxLjUyNiwwLjY0MywyLjQ5NywwLjc4NCwyLjkxMmwxLjMwMiw0LjAzNkgzNy4xMTN6Ii8+PHBhdGggZD0iTTEyMS4yODQsMjguNTg3YzAtMS4zOTEtMC4zMzEtMi41NjItMC45ODYtMy41MTNjLTAuODIzLTEuMTkxLTIuMDM2LTEuNzg2LTMuNjQ2LTEuNzg2IGMtMS42MzMsMC0yLjkzMiwwLjU5NS0zLjksMS43ODZjLTAuOTE1LDEuMTIxLTEuMzc2LDIuNTE2LTEuMzc2LDQuMjAxYzAsMS43MTEsMC40OTcsMy4wNzUsMS40ODIsNC4wOTEgYzAuOTg2LDEuMDE2LDIuMzQzLDEuNTIyLDQuMDY2LDEuNTIyYzEuNDQxLDAsMi42ODktMC4yMjQsMy43NC0wLjY4NmwtMC4zOS0xLjcyMmMtMC45MDIsMC4zNTctMS45MDEsMC41MzItMy4wMDQsMC41MzIgYy0wLjk5NSwwLTEuODA0LTAuMjYtMi40MjktMC43ODFjLTAuNjktMC41OC0xLjA1LTEuNDE4LTEuMDc5LTIuNTE3aDcuNDNDMTIxLjI1MiwyOS40MDIsMTIxLjI4NCwyOS4wMjcsMTIxLjI4NCwyOC41ODd6IE0xMTMuNzY0LDI3Ljk0MWMwLjA3NC0wLjc0NSwwLjMyMS0xLjM4OCwwLjczNC0xLjkyMmMwLjUwNi0wLjY2OCwxLjE2My0xLjAxNCwxLjk3MS0xLjAxNGMwLjg4NSwwLDEuNTQ0LDAuMzQ5LDEuOTc0LDEuMDM0IGMwLjMzNSwwLjUzOCwwLjQ5MiwxLjE3LDAuNDc5LDEuOTAxSDExMy43NjR6Ii8+PHBhdGggZD0iTTcwLjU0Miw5LjgzN2MtMC44NjEsMC0xLjQ4NiwwLjM2NS0xLjgzOSwwLjkxOWgtMC4wMjRWNy4zMzhoLTEuNDQ5djYuNzUzYzAsMC41OS0wLjAyNCwxLjIyNi0wLjA0NywxLjYxNSBoMS4yMzhsMC4wNy0wLjg2aDAuMDI0YzAuNDEyLDAuNzA4LDEuMDcyLDAuOTksMS44MTUsMC45OWMxLjI5NywwLDIuNjA1LTEuMDI1LDIuNjA1LTMuMDg5IEM3Mi45NDYsMTEuMDAzLDcxLjk0NSw5LjgzNyw3MC41NDIsOS44Mzd6IE03MCwxNC42OTJjLTAuNjI0LDAtMS4xMzEtMC40MjUtMS4yODQtMS4wMTNjLTAuMDI0LTAuMTA2LTAuMDM2LTAuMjI0LTAuMDM2LTAuMzQyIHYtMC45MzFjMC0wLjE0MiwwLjAyNC0wLjI3MSwwLjA0OC0wLjM3OGMwLjE1My0wLjYzNiwwLjY5NS0xLjA2MSwxLjI4NC0xLjA2MWMwLjk2NiwwLDEuNDQ5LDAuODI1LDEuNDQ5LDEuODM5IEM3MS40NjEsMTMuOTczLDcwLjkwOCwxNC42OTIsNzAsMTQuNjkyeiIvPjxwYXRoIGQ9Ik04My4wMDUsMTIuNjNjMC0xLjI2MS0wLjYxNC0yLjc5NC0yLjQ3NS0yLjc5NGMtMS44MzksMC0yLjgwNSwxLjQ5Ny0yLjgwNSwzLjA4OSBjMCwxLjc1NiwxLjA5NiwyLjg5OSwyLjk1OCwyLjg5OWMwLjgyNSwwLDEuNTA4LTAuMTUzLDIuMDAzLTAuMzY1bC0wLjIxMi0wLjk5MWMtMC40NDgsMC4xNTQtMC45MTksMC4yNTktMS41OTEsMC4yNTkgYy0wLjkzMSwwLTEuNzMzLTAuNDQ4LTEuNzY4LTEuNDg1aDMuODQyQzgyLjk4MSwxMy4xMTQsODMuMDA1LDEyLjkwMSw4My4wMDUsMTIuNjN6IE03OS4xMTUsMTIuMjI5IGMwLjA1OS0wLjU4OSwwLjQzNi0xLjQwMywxLjMzMi0xLjQwM2MwLjk2NiwwLDEuMjAyLDAuODcyLDEuMTksMS40MDNINzkuMTE1eiIvPjxwYXRoIGQ9Ik05MC4yMjEsOS44MzdjLTEuNzMzLDAtMi45NywxLjE1NS0yLjk3LDMuMDQxYzAsMS44NSwxLjI2MSwyLjk1OCwyLjg3NiwyLjk1OGMxLjQ2MSwwLDIuOTQ3LTAuOTQzLDIuOTQ3LTMuMDUzIEM5My4wNzQsMTEuMDM5LDkxLjkzLDkuODM3LDkwLjIyMSw5LjgzN3ogTTkwLjE3NSwxNC43ODdjLTAuODczLDAtMS40MjctMC44MzctMS40MjctMS45NDVjMC0wLjk1NSwwLjQxMi0xLjk1NiwxLjQzOC0xLjk1NiBjMC45OSwwLDEuMzkxLDEuMDM3LDEuMzkxLDEuOTMzQzkxLjU3NywxMy45ODUsOTEsMTQuNzg3LDkwLjE3NSwxNC43ODd6Ii8+PHBhdGggZD0iTTY1LjcwOCwxNC4zMjd2LTIuMDYzYzAtMS4yNjEtMC41MzEtMi40MjgtMi4zNy0yLjQyOGMtMC45MDcsMC0xLjY1LDAuMjQ3LTIuMDc0LDAuNTA3bDAuMjgzLDAuOTQzIGMwLjM4OS0wLjI0NywwLjk3OC0wLjQyNSwxLjU0NC0wLjQyNWMxLjAxMywwLDEuMTY2LDAuNjI1LDEuMTY2LDEuMDAydjAuMDk0Yy0yLjEyMi0wLjAxMi0zLjQwNiwwLjczMS0zLjQwNiwyLjE2OSBjMCwwLjg3MiwwLjY0OCwxLjcwOSwxLjgwNCwxLjcwOWMwLjc1NCwwLDEuMzU2LTAuMzE5LDEuNjk3LTAuNzY2aDAuMDM1bDAuMTA2LDAuNjM2aDEuMzA4IEM2NS43MzEsMTUuMzUzLDY1LjcwOCwxNC44NDYsNjUuNzA4LDE0LjMyN3ogTTY0LjI5MywxMy42OWMwLDAuMTA2LDAsMC4yMTMtMC4wMzUsMC4zMTljLTAuMTQxLDAuNDEzLTAuNTU0LDAuNzktMS4xNDQsMC43OSBjLTAuNDU5LDAtMC44MjUtMC4yNi0wLjgyNS0wLjgyNWMwLTAuODcyLDAuOTc4LTEuMDg0LDIuMDAzLTEuMDcyVjEzLjY5eiIvPjxwYXRoIGQ9Ik0xMjEuMjMxLDEyLjYzYzAtMS4yNjEtMC42MTQtMi43OTQtMi40NzUtMi43OTRjLTEuODM5LDAtMi44MDUsMS40OTctMi44MDUsMy4wODkgYzAsMS43NTYsMS4wOTYsMi44OTksMi45NTgsMi44OTljMC44MjUsMCwxLjUwOC0wLjE1MywyLjAwMy0wLjM2NWwtMC4yMTItMC45OTFjLTAuNDQ3LDAuMTU0LTAuOTE5LDAuMjU5LTEuNTkxLDAuMjU5IGMtMC45MzEsMC0xLjczMy0wLjQ0OC0xLjc2OC0xLjQ4NWgzLjg0MkMxMjEuMjA3LDEzLjExNCwxMjEuMjMxLDEyLjkwMSwxMjEuMjMxLDEyLjYzeiBNMTE3LjM0MSwxMi4yMjkgYzAuMDU5LTAuNTg5LDAuNDM2LTEuNDAzLDEuMzMyLTEuNDAzYzAuOTY2LDAsMS4yMDMsMC44NzIsMS4xOSwxLjQwM0gxMTcuMzQxeiIvPjxwYXRoIGQ9Ik01MS41NDcsMTQuMzI3di0yLjA2M2MwLTEuMjYxLTAuNTMxLTIuNDI4LTIuMzY5LTIuNDI4Yy0wLjkwOCwwLTEuNjUxLDAuMjQ3LTIuMDc1LDAuNTA3bDAuMjgzLDAuOTQzIGMwLjM4OS0wLjI0NywwLjk3OC0wLjQyNSwxLjU0NC0wLjQyNWMxLjAxMywwLDEuMTY3LDAuNjI1LDEuMTY3LDEuMDAydjAuMDk0Yy0yLjEyMi0wLjAxMi0zLjQwNiwwLjczMS0zLjQwNiwyLjE2OSBjMCwwLjg3MiwwLjY0OCwxLjcwOSwxLjgwMywxLjcwOWMwLjc1NCwwLDEuMzU1LTAuMzE5LDEuNjk3LTAuNzY2aDAuMDM1bDAuMTA2LDAuNjM2aDEuMzA5IEM1MS41NywxNS4zNTMsNTEuNTQ3LDE0Ljg0Niw1MS41NDcsMTQuMzI3eiBNNTAuMTMyLDEzLjY5YzAsMC4xMDYsMCwwLjIxMy0wLjAzNCwwLjMxOWMtMC4xNDIsMC40MTMtMC41NTUsMC43OS0xLjE0NCwwLjc5IGMtMC40NiwwLTAuODI1LTAuMjYtMC44MjUtMC44MjVjMC0wLjg3MiwwLjk3OC0xLjA4NCwyLjAwMy0xLjA3MlYxMy42OXoiLz48cGF0aCBkPSJNMjMuMTA2LDcuMzc2SDEyLjIyMWMtMS40LDAtMi41NDIsMS4xMzgtMi41NDIsMi41Mzd2MjQuMTljMCwxLjQsMS4xNDEsMi41MzQsMi41NDIsMi41MzRoMTAuODg2IGMxLjM5OSwwLDIuNTQtMS4xMzUsMi41NC0yLjUzNFY5LjkxM0MyNS42NDYsOC41MTQsMjQuNTA1LDcuMzc2LDIzLjEwNiw3LjM3NnogTTE2LjQsOS45NDdoMi41MjRjMC4xNjUsMCwwLjMsMC4xMzUsMC4zLDAuMzAyIGMwLDAuMTU4LTAuMTM1LDAuMjk0LTAuMywwLjI5NEgxNi40Yy0wLjE2LDAtMC4yOTgtMC4xMzYtMC4yOTgtMC4yOTRDMTYuMTAyLDEwLjA4MiwxNi4yNCw5Ljk0NywxNi40LDkuOTQ3eiBNMTcuNjYyLDM1LjI4OSBjLTAuNzIyLDAtMS4zMTEtMC41ODktMS4zMTEtMS4zMTJjMC0wLjcyNSwwLjU4OS0xLjMxNSwxLjMxMS0xLjMxNWMwLjcyNiwwLDEuMzEzLDAuNTkxLDEuMzEzLDEuMzE1IEMxOC45NzQsMzQuNywxOC4zODcsMzUuMjg5LDE3LjY2MiwzNS4yODl6IE0yNC4xMDMsMzEuNTM2aC0xMi44OFYxMi40ODdoMTIuODhWMzEuNTM2eiIvPjwvc3ZnPg==" alt="">
+                        </div>
+                        <div class="mrf2">
+                            <img class="play" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNDhweCIgd2lkdGg9IjE0NHB4IiBmaWxsPSJ2YXIoLS11c2FnZS1jb2xvci1iYWNrZ3JvdW5kLWRlZmF1bHQpIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEzOSA0NCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik00NS42MTYsMTIuMDFoLTAuOTUyYzAtMC4xMzEtMC4wOS0wLjUwMi0wLjI3MS0xLjExMkg0My4wMmMtMC4xODYsMC42MDEtMC4yOCwwLjk3Mi0wLjI4LDEuMTEyaC0wLjg5NSBjMC0wLjA3NywwLjIzMS0wLjcxMiwwLjY5NC0xLjkwM2MwLjQ2My0xLjE5MiwwLjY5NS0xLjg0OCwwLjY5NS0xLjk2OWgxLjEyNGMwLDAuMTEzLDAuMjEsMC43NiwwLjYyOSwxLjk0MSBDNDUuNDA2LDExLjI1OSw0NS42MTYsMTEuOTAzLDQ1LjYxNiwxMi4wMXogTTQ0LjI0MiwxMC4zM2MtMC4zMzktMS4wMjMtMC41MDktMS41NzYtMC41MDktMS42NmgtMC4wNDggYzAsMC4wNzctMC4xNzUsMC42My0wLjUyNiwxLjY2SDQ0LjI0MnoiLz48cGF0aCBkPSJNNDkuNDUxLDEyLjAxaC0wLjczNWMwLTAuMDgxLTAuMjczLTAuNTEtMC44MTgtMS4yODhjLTAuNTcxLTAuODE5LTAuODk2LTEuMzc5LTAuOTc2LTEuNjhoLTAuMDQ4IGMwLjA0OSwwLjQzNCwwLjA3NCwwLjgyNywwLjA3NCwxLjE3OGMwLDAuNDksMC4wMTQsMS4wODcsMC4wNDIsMS43OUg0Ni4yNmMwLjAzLTAuNjE1LDAuMDQ1LTEuMjksMC4wNDUtMi4wMjUgYzAtMC43MjQtMC4wMTUtMS4zMzktMC4wNDUtMS44NDdoMC44ODNjMCwwLjEwNSwwLjI0NSwwLjUyNCwwLjczNSwxLjI1OGMwLjUyMSwwLjc3OSwwLjgyMSwxLjMwOCwwLjg5OCwxLjU4NWgwLjA0NSBjLTAuMDQ4LTAuNDQyLTAuMDcxLTAuODM5LTAuMDcxLTEuMTljMC0wLjUzNy0wLjAxNC0xLjA4OC0wLjA0Mi0xLjY1NGgwLjc0NGMtMC4wMjgsMC40OTItMC4wNDIsMS4xMDctMC4wNDIsMS44NDcgQzQ5LjQwOSwxMC43MzEsNDkuNDIzLDExLjQwNiw0OS40NTEsMTIuMDF6Ii8+PHBhdGggZD0iTTUzLjc2Miw5Ljk0YzAsMC41NjMtMC4xODEsMS4wNTUtMC41NDEsMS40NzVjLTAuMzYxLDAuNDItMC44NjcsMC42MzEtMS41MTcsMC42MzEgYy0wLjI5MywwLTAuNjk4LTAuMDEyLTEuMjEzLTAuMDM2YzAuMDI2LTAuNTk5LDAuMDM5LTEuMjc0LDAuMDM5LTIuMDI1YzAtMC43MjItMC4wMTMtMS4zMzctMC4wMzktMS44NDdoMC41MiBjMC4wODUsMCwwLjIxMi0wLjAwMywwLjM4MS0wLjAwOWMwLjE2OC0wLjAwNiwwLjI3OC0wLjAwOSwwLjMzLTAuMDA5YzAuNzE2LDAsMS4yMzUsMC4xNzgsMS41NTcsMC41MzUgQzUzLjYwMSw5LjAxMiw1My43NjIsOS40NDEsNTMuNzYyLDkuOTR6IE01Mi45NSwxMC4wNjhjMC0wLjM4MS0wLjExMS0wLjcwMS0wLjMzMy0wLjk2MmMtMC4yMjItMC4yNjEtMC41NjEtMC4zOTEtMS4wMTctMC4zOTEgYy0wLjA4NSwwLTAuMjAyLDAuMDA5LTAuMzUxLDAuMDI3YzAuMDIsMC4zOTcsMC4wMywwLjgxMSwwLjAzLDEuMjQzYzAsMC40NzQsMC4wMSwwLjk0NCwwLjAzLDEuNDEgYzAuMTI5LDAuMDI2LDAuMjU4LDAuMDM5LDAuMzg3LDAuMDM5YzAuNDI2LDAsMC43NDItMC4xMzIsMC45NDctMC4zOTdDNTIuODQ3LDEwLjc3Miw1Mi45NSwxMC40NDksNTIuOTUsMTAuMDY4eiIvPjxwYXRoIGQ9Ik01Ny43MzcsMTIuMDFoLTAuODhjLTAuMjMtMC43MDItMC40MDctMS4xMzUtMC41MjktMS4zYy0wLjEyMy0wLjE2NC0wLjMyMS0wLjI0Ny0wLjU5NS0wLjI0NyBjLTAuMTE1LDAtMC4yMjUsMC4wMDEtMC4zMywwLjAwM2MwLDAuNTEsMC4wMDksMS4wMjQsMC4wMjcsMS41NDRoLTAuODI3YzAuMDI2LTAuNTk5LDAuMDM5LTEuMjc0LDAuMDM5LTIuMDI1IGMwLTAuNzIyLTAuMDEzLTEuMzM3LTAuMDM5LTEuODQ3aDAuNTE1YzAuMDYsMCwwLjE4NC0wLjAwMywwLjM3My0wLjAwOWMwLjE4OS0wLjAwNiwwLjM2NC0wLjAwOSwwLjUyNS0wLjAwOSBjMC45MSwwLDEuMzY1LDAuMzExLDEuMzY1LDAuOTM0YzAsMC40OTQtMC4yNiwwLjgzOC0wLjc3OSwxLjAzMnYwLjA0NWMwLjIsMC4wNTYsMC4zNzYsMC4yMTIsMC41MjYsMC40NjggQzU3LjI3OCwxMC44NTYsNTcuNDgxLDExLjMyNiw1Ny43MzcsMTIuMDF6IE01Ni42MjEsOS4yNzRjMC0wLjM5NC0wLjI1NC0wLjU5Mi0wLjc2MS0wLjU5MmMtMC4xODYsMC0wLjM1MSwwLjAxNC0wLjQ5NCwwLjA0MiBjMC4wMjIsMC4zMDcsMC4wMzMsMC43MDgsMC4wMzMsMS4yMDJjMC4xMDksMC4wMDQsMC4yMDEsMC4wMDYsMC4yNzcsMC4wMDZDNTYuMzA2LDkuOTMyLDU2LjYyMSw5LjcxMyw1Ni42MjEsOS4yNzR6Ii8+PHBhdGggZD0iTTYyLDEwLjAwM2MwLDAuNjA5LTAuMTg2LDEuMTEzLTAuNTU5LDEuNTE0Yy0wLjM3MywwLjQwMS0wLjgzNCwwLjYwMS0xLjM4MywwLjYwMSBjLTAuNTIzLDAtMC45NjItMC4xODQtMS4zMTUtMC41NTJjLTAuMzUzLTAuMzY4LTAuNTI5LTAuODM1LTAuNTI5LTEuNDAyYzAtMC42MDksMC4xODYtMS4xMTMsMC41NTktMS41MTQgYzAuMzczLTAuNCwwLjgzNC0wLjYwMSwxLjM4My0wLjYwMWMwLjUyMywwLDAuOTYyLDAuMTg0LDEuMzE1LDAuNTVDNjEuODIzLDguOTY2LDYyLDkuNDM0LDYyLDEwLjAwM3ogTTYxLjE3OSwxMC4wODkgYzAtMC40MTQtMC4xMDYtMC43NS0wLjMxOC0xLjAwOGMtMC4yMTItMC4yNTgtMC40NzQtMC4zODctMC43ODUtMC4zODdjLTAuMjksMC0wLjUzNSwwLjEzLTAuNzM4LDAuMzkgYy0wLjIwMiwwLjI2LTAuMzAzLDAuNTg4LTAuMzAzLDAuOTg0YzAsMC40MTIsMC4xMDcsMC43NDgsMC4zMiwxLjAwN2MwLjIxMywwLjI1OSwwLjQ3NCwwLjM4OCwwLjc4NCwwLjM4OCBjMC4yODksMCwwLjUzNS0wLjEzLDAuNzM4LTAuMzkxQzYxLjA3OCwxMC44MTEsNjEuMTc5LDEwLjQ4NCw2MS4xNzksMTAuMDg5eiIvPjxwYXRoIGQ9Ik02My42ODIsMTIuMDFINjIuODRjMC4wMjYtMC42MTUsMC4wMzktMS4yOSwwLjAzOS0yLjAyNWMwLTAuNzI0LTAuMDEzLTEuMzM5LTAuMDM5LTEuODQ3aDAuODQyIGMtMC4wMjYsMC41LTAuMDM5LDEuMTE1LTAuMDM5LDEuODQ3QzYzLjY0MywxMC43MzMsNjMuNjU2LDExLjQwOCw2My42ODIsMTIuMDF6Ii8+PHBhdGggZD0iTTY3Ljk5Myw5Ljk0YzAsMC41NjMtMC4xODEsMS4wNTUtMC41NDEsMS40NzVjLTAuMzYxLDAuNDItMC44NjcsMC42MzEtMS41MTcsMC42MzEgYy0wLjI5NCwwLTAuNjk4LTAuMDEyLTEuMjEzLTAuMDM2YzAuMDI2LTAuNTk5LDAuMDM5LTEuMjc0LDAuMDM5LTIuMDI1YzAtMC43MjItMC4wMTMtMS4zMzctMC4wMzktMS44NDdoMC41MiBjMC4wODUsMCwwLjIxMi0wLjAwMywwLjM4MS0wLjAwOXMwLjI3OC0wLjAwOSwwLjMzLTAuMDA5YzAuNzE2LDAsMS4yMzUsMC4xNzgsMS41NTcsMC41MzVDNjcuODMxLDkuMDEyLDY3Ljk5Myw5LjQ0MSw2Ny45OTMsOS45NHogTTY3LjE4MSwxMC4wNjhjMC0wLjM4MS0wLjExMS0wLjcwMS0wLjMzMy0wLjk2MmMtMC4yMjItMC4yNjEtMC41NjEtMC4zOTEtMS4wMTctMC4zOTFjLTAuMDg1LDAtMC4yMDIsMC4wMDktMC4zNTEsMC4wMjcgYzAuMDIsMC4zOTcsMC4wMywwLjgxMSwwLjAzLDEuMjQzYzAsMC40NzQsMC4wMSwwLjk0NCwwLjAzLDEuNDFjMC4xMjksMC4wMjYsMC4yNTgsMC4wMzksMC4zODcsMC4wMzkgYzAuNDI2LDAsMC43NDItMC4xMzIsMC45NDctMC4zOTdDNjcuMDc4LDEwLjc3Miw2Ny4xODEsMTAuNDQ5LDY3LjE4MSwxMC4wNjh6Ii8+PHBhdGggZD0iTTczLjcxMiwxMi4wMUg3Mi43NmMwLTAuMTMxLTAuMDktMC41MDItMC4yNzEtMS4xMTJoLTEuMzc0Yy0wLjE4NiwwLjYwMS0wLjI4LDAuOTcyLTAuMjgsMS4xMTJINjkuOTQgYzAtMC4wNzcsMC4yMzEtMC43MTIsMC42OTQtMS45MDNjMC40NjMtMS4xOTIsMC42OTQtMS44NDgsMC42OTQtMS45NjloMS4xMjRjMCwwLjExMywwLjIxLDAuNzYsMC42MjksMS45NDEgQzczLjUwMiwxMS4yNTksNzMuNzEyLDExLjkwMyw3My43MTIsMTIuMDF6IE03Mi4zMzcsMTAuMzNjLTAuMzM5LTEuMDIzLTAuNTA5LTEuNTc2LTAuNTA5LTEuNjZoLTAuMDQ4IGMwLDAuMDc3LTAuMTc1LDAuNjMtMC41MjYsMS42Nkg3Mi4zMzd6Ii8+PHBhdGggZD0iTTc3LjE4MSw5LjE1MmMwLDAuNDc0LTAuMTc2LDAuODI0LTAuNTI4LDEuMDVjLTAuMzUyLDAuMjI2LTAuNzg0LDAuMzM5LTEuMjk1LDAuMzM5IGMtMC4wOTMsMC0wLjE1OS0wLjAwMi0wLjE5OS0wLjAwNmMwLDAuMzczLDAuMDExLDAuODY1LDAuMDMzLDEuNDc1aC0wLjgzNmMwLjAyNi0wLjU3MywwLjAzOS0xLjI0OCwwLjAzOS0yLjAyNSBjMC0wLjcxNC0wLjAxMy0xLjMyOS0wLjAzOS0xLjg0N2gwLjUxOGMwLjA3MywwLDAuMjE0LTAuMDAzLDAuNDIyLTAuMDA5czAuMzg5LTAuMDA5LDAuNTQxLTAuMDA5YzAuMzc3LDAsMC42OTUsMC4wODUsMC45NTUsMC4yNTYgQzc3LjA1MSw4LjU0Nyw3Ny4xODEsOC44MDUsNzcuMTgxLDkuMTUyeiBNNzYuNDEzLDkuMzE2YzAtMC40MjQtMC4yODEtMC42MzctMC44NDUtMC42MzdjLTAuMTQxLDAtMC4yOSwwLjAxNS0wLjQ0NiwwLjA0NSBjMC4wMjIsMC4zNzUsMC4wMzMsMC43OTksMC4wMzMsMS4yNzNjMC4wNDksMC4wMDQsMC4xMDcsMC4wMDYsMC4xNzIsMC4wMDZDNzYuMDUyLDEwLjAwMyw3Ni40MTMsOS43NzQsNzYuNDEzLDkuMzE2eiIvPjxwYXRoIGQ9Ik04MC43NDgsOS4xNTJjMCwwLjQ3NC0wLjE3NiwwLjgyNC0wLjUyOCwxLjA1Yy0wLjM1MiwwLjIyNi0wLjc4NCwwLjMzOS0xLjI5NSwwLjMzOSBjLTAuMDkzLDAtMC4xNTktMC4wMDItMC4xOTktMC4wMDZjMCwwLjM3MywwLjAxMSwwLjg2NSwwLjAzMywxLjQ3NWgtMC44MzZjMC4wMjYtMC41NzMsMC4wMzktMS4yNDgsMC4wMzktMi4wMjUgYzAtMC43MTQtMC4wMTMtMS4zMjktMC4wMzktMS44NDdoMC41MThjMC4wNzMsMCwwLjIxNC0wLjAwMywwLjQyMi0wLjAwOXMwLjM4OS0wLjAwOSwwLjU0MS0wLjAwOWMwLjM3NywwLDAuNjk1LDAuMDg1LDAuOTU1LDAuMjU2IEM4MC42MTgsOC41NDcsODAuNzQ4LDguODA1LDgwLjc0OCw5LjE1MnogTTc5Ljk4MSw5LjMxNmMwLTAuNDI0LTAuMjgyLTAuNjM3LTAuODQ1LTAuNjM3Yy0wLjE0MSwwLTAuMjksMC4wMTUtMC40NDYsMC4wNDUgYzAuMDIyLDAuMzc1LDAuMDMzLDAuNzk5LDAuMDMzLDEuMjczYzAuMDQ5LDAuMDA0LDAuMTA3LDAuMDA2LDAuMTcyLDAuMDA2Qzc5LjYxOSwxMC4wMDMsNzkuOTgxLDkuNzc0LDc5Ljk4MSw5LjMxNnoiLz48cGF0aCBkPSJNODYuNTgsMTAuMDAzYzAsMC42MDktMC4xODYsMS4xMTMtMC41NTksMS41MTRjLTAuMzczLDAuNDAxLTAuODM0LDAuNjAxLTEuMzgzLDAuNjAxIGMtMC41MjMsMC0wLjk2Mi0wLjE4NC0xLjMxNS0wLjU1MmMtMC4zNTMtMC4zNjgtMC41MjktMC44MzUtMC41MjktMS40MDJjMC0wLjYwOSwwLjE4Ni0xLjExMywwLjU1OS0xLjUxNCBjMC4zNzMtMC40LDAuODM0LTAuNjAxLDEuMzgzLTAuNjAxYzAuNTIzLDAsMC45NjIsMC4xODQsMS4zMTUsMC41NUM4Ni40MDMsOC45NjYsODYuNTgsOS40MzQsODYuNTgsMTAuMDAzeiBNODUuNzU5LDEwLjA4OSBjMC0wLjQxNC0wLjEwNi0wLjc1LTAuMzE4LTEuMDA4Yy0wLjIxMi0wLjI1OC0wLjQ3NC0wLjM4Ny0wLjc4NS0wLjM4N2MtMC4yOSwwLTAuNTM1LDAuMTMtMC43MzgsMC4zOSBjLTAuMjAyLDAuMjYtMC4zMDMsMC41ODgtMC4zMDMsMC45ODRjMCwwLjQxMiwwLjEwNiwwLjc0OCwwLjMyLDEuMDA3YzAuMjEzLDAuMjU5LDAuNDc0LDAuMzg4LDAuNzgzLDAuMzg4IGMwLjI5LDAsMC41MzUtMC4xMywwLjczOC0wLjM5MUM4NS42NTgsMTAuODExLDg1Ljc1OSwxMC40ODQsODUuNzU5LDEwLjA4OXoiLz48cGF0aCBkPSJNOTAuNjExLDEyLjAxaC0wLjczNWMwLTAuMDgxLTAuMjczLTAuNTEtMC44MTgtMS4yODhjLTAuNTcxLTAuODE5LTAuODk2LTEuMzc5LTAuOTc2LTEuNjhoLTAuMDQ4IGMwLjA0OSwwLjQzNCwwLjA3NCwwLjgyNywwLjA3NCwxLjE3OGMwLDAuNDksMC4wMTQsMS4wODcsMC4wNDIsMS43OUg4Ny40MmMwLjAzLTAuNjE1LDAuMDQ1LTEuMjksMC4wNDUtMi4wMjUgYzAtMC43MjQtMC4wMTUtMS4zMzktMC4wNDUtMS44NDdoMC44ODNjMCwwLjEwNSwwLjI0NSwwLjUyNCwwLjczNSwxLjI1OGMwLjUyMiwwLjc3OSwwLjgyMSwxLjMwOCwwLjg5OCwxLjU4NWgwLjA0NSBjLTAuMDQ4LTAuNDQyLTAuMDcxLTAuODM5LTAuMDcxLTEuMTljMC0wLjUzNy0wLjAxNC0xLjA4OC0wLjA0Mi0xLjY1NGgwLjc0NEM5MC41ODMsOC42Myw5MC41Nyw5LjI0Niw5MC41Nyw5Ljk4NSBDOTAuNTcsMTAuNzMxLDkwLjU4MywxMS40MDYsOTAuNjExLDEyLjAxeiIvPjxwYXRoIGQ9Ik01NS41MjUsMjQuNDE3YzAsMS45MjItMC41NywzLjQ1NC0xLjcxLDQuNTkzYy0xLjI5NCwxLjM1OC0yLjk3OSwyLjAzOC01LjA1NSwyLjAzOCBjLTEuOTg2LDAtMy42NzUtMC42ODktNS4wNjQtMi4wNjZjLTEuMzkxLTEuMzc3LTIuMDg1LTMuMDg1LTIuMDg1LTUuMTIyczAuNjk0LTMuNzQ0LDIuMDg1LTUuMTIyIGMxLjM4OS0xLjM3NywzLjA3OC0yLjA2Niw1LjA2NC0yLjA2NmMwLjk4NywwLDEuOTI4LDAuMTkyLDIuODI1LDAuNTc2YzAuODk2LDAuMzg0LDEuNjE1LDAuODk3LDIuMTUyLDEuNTM4bC0xLjIxMSwxLjIxMSBjLTAuOTEtMS4wODktMi4xNjYtMS42MzQtMy43NjctMS42MzRjLTEuNDQ4LDAtMi43LDAuNTA5LTMuNzU3LDEuNTI5Yy0xLjA1NywxLjAxOC0xLjU4NiwyLjM0Mi0xLjU4NiwzLjk2OCBjMCwxLjYyOCwwLjUyOSwyLjk1LDEuNTg2LDMuOTY5YzEuMDU3LDEuMDE4LDIuMzA5LDEuNTI4LDMuNzU3LDEuNTI4YzEuNTM4LDAsMi44MTktMC41MTMsMy44NDQtMS41MzggYzAuNjY2LTAuNjY3LDEuMDUtMS41OTYsMS4xNTMtMi43ODdINDguNzZ2LTEuNjUzaDYuNjY5QzU1LjQ5MywyMy43MzgsNTUuNTI1LDI0LjA4NCw1NS41MjUsMjQuNDE3eiIvPjxwYXRoIGQ9Ik01Ny42MiwyMi40NDdjMC45MS0wLjk1NSwyLjA2OS0xLjQzMiwzLjQ3OS0xLjQzMmMxLjQwOSwwLDIuNTY4LDAuNDc3LDMuNDc5LDEuNDMyIGMwLjkxLDAuOTU1LDEuMzY0LDIuMTQ5LDEuMzY0LDMuNTg0YzAsMS40MzUtMC40NTQsMi42My0xLjM2NCwzLjU4NGMtMC45MSwwLjk1NS0yLjA3LDEuNDMyLTMuNDc5LDEuNDMyIGMtMS40MSwwLTIuNTY5LTAuNDc3LTMuNDc5LTEuNDMyYy0wLjkxLTAuOTU1LTEuMzY1LTIuMTQ5LTEuMzY1LTMuNTg0QzU2LjI1NSwyNC41OTYsNTYuNzEsMjMuNDAyLDU3LjYyLDIyLjQ0N3ogTTU4LjkzNywyOC41MDEgYzAuNjA4LDAuNjIxLDEuMzI5LDAuOTMzLDIuMTYyLDAuOTMzYzAuODMzLDAsMS41NTMtMC4zMTEsMi4xNjItMC45MzNjMC42MDgtMC42MjEsMC45MTMtMS40NDQsMC45MTMtMi40NjkgYzAtMS4wMjUtMC4zMDUtMS44NDgtMC45MTMtMi40N2MtMC42MDktMC42MjEtMS4zMy0wLjkzMi0yLjE2Mi0wLjkzMmMtMC44MzQsMC0xLjU1NCwwLjMxLTIuMTYyLDAuOTMyIGMtMC42MDksMC42MjItMC45MTMsMS40NDUtMC45MTMsMi40N0M1OC4wMjQsMjcuMDU3LDU4LjMyNywyNy44OCw1OC45MzcsMjguNTAxeiIvPjxwYXRoIGQ9Ik02Ny45MDMsMjIuNDQ3YzAuOTEtMC45NTUsMi4wNjktMS40MzIsMy40NzktMS40MzJjMS40MDksMCwyLjU2OCwwLjQ3NywzLjQ3OSwxLjQzMiBjMC45MSwwLjk1NSwxLjM2NCwyLjE0OSwxLjM2NCwzLjU4NGMwLDEuNDM1LTAuNDU0LDIuNjMtMS4zNjQsMy41ODRjLTAuOTEsMC45NTUtMi4wNywxLjQzMi0zLjQ3OSwxLjQzMiBjLTEuNDEsMC0yLjU2OS0wLjQ3Ny0zLjQ3OS0xLjQzMmMtMC45MS0wLjk1NS0xLjM2NS0yLjE0OS0xLjM2NS0zLjU4NEM2Ni41MzgsMjQuNTk2LDY2Ljk5MywyMy40MDIsNjcuOTAzLDIyLjQ0N3ogTTY5LjIxOSwyOC41MDEgYzAuNjA4LDAuNjIxLDEuMzI5LDAuOTMzLDIuMTYyLDAuOTMzYzAuODMzLDAsMS41NTMtMC4zMTEsMi4xNjItMC45MzNjMC42MDgtMC42MjEsMC45MTMtMS40NDQsMC45MTMtMi40NjkgYzAtMS4wMjUtMC4zMDUtMS44NDgtMC45MTMtMi40N2MtMC42MDktMC42MjEtMS4zMy0wLjkzMi0yLjE2Mi0wLjkzMmMtMC44MzMsMC0xLjU1NCwwLjMxLTIuMTYyLDAuOTMyIGMtMC42MDksMC42MjItMC45MTMsMS40NDUtMC45MTMsMi40N0M2OC4zMDYsMjcuMDU3LDY4LjYxLDI3Ljg4LDY5LjIxOSwyOC41MDF6Ii8+PHBhdGggZD0iTTgxLjQ1MywzNS4xOTljLTEuMTE1LDAtMi4wMjUtMC4yNzgtMi43My0wLjgzNmMtMC43MDUtMC41NTgtMS4yMTEtMS4xOTUtMS41MTgtMS45MTNsMS42MTUtMC42NzIgYzAuMTc5LDAuNTEyLDAuNTA5LDAuOTQyLDAuOTksMS4yODdjMC40OCwwLjM0NiwxLjAyNywwLjUxOSwxLjY0MywwLjUxOWMwLjk3MywwLDEuNzM5LTAuMjkyLDIuMjk3LTAuODc0IGMwLjU1OC0wLjU4MywwLjgzNi0xLjM3NCwwLjgzNi0yLjM3M3YtMC45MDNoLTAuMDc3Yy0wLjMwOCwwLjQ2MS0wLjc0MywwLjg0Ni0xLjMwNywxLjE1M2MtMC41NjQsMC4zMDgtMS4xOTksMC40NjItMS45MDMsMC40NjIgYy0xLjIxNywwLTIuMjY4LTAuNDgxLTMuMTUyLTEuNDQyYy0wLjg4NC0wLjk2MS0xLjMyNi0yLjE1Mi0xLjMyNi0zLjU3NWMwLTEuNDIyLDAuNDQyLTIuNjE0LDEuMzI2LTMuNTc1IGMwLjg4NC0wLjk2LDEuOTM1LTEuNDQxLDMuMTUyLTEuNDQxYzAuNzA0LDAsMS4zMzksMC4xNTQsMS45MDMsMC40NjFjMC41NjMsMC4zMDgsMC45OTksMC42OTIsMS4zMDcsMS4xNTRoMC4wNzd2LTEuMzA4aDEuNjkyIHY4LjkzN2MwLDEuNjE1LTAuNDY4LDIuODQxLTEuNDAzLDMuNjgxQzgzLjkzOSwzNC43NzksODIuNzk4LDM1LjE5OSw4MS40NTMsMzUuMTk5eiBNODEuNTg3LDI5LjQzNCBjMC44MzMsMCwxLjU0MS0wLjMwOCwyLjEyNC0wLjkyM2MwLjU4My0wLjYxNSwwLjg3NC0xLjQ0MiwwLjg3NC0yLjQ3OWMwLTEuMDM4LTAuMjkxLTEuODY0LTAuODc0LTIuNDc5IGMtMC41ODMtMC42MTYtMS4yOTEtMC45MjMtMi4xMjQtMC45MjNjLTAuODIsMC0xLjUyNSwwLjMxLTIuMTE0LDAuOTMyYy0wLjU4OSwwLjYyMi0wLjg4NCwxLjQ0NS0wLjg4NCwyLjQ3IGMwLDEuMDI1LDAuMjk1LDEuODQ4LDAuODg0LDIuNDY5QzgwLjA2MiwyOS4xMjIsODAuNzY3LDI5LjQzNCw4MS41ODcsMjkuNDM0eiIvPjxwYXRoIGQ9Ik04OS43MTYsMzAuNzRoLTEuNzY4VjE2Ljk3OWgxLjc2OFYzMC43NHoiLz48cGF0aCBkPSJNOTUuNTU5LDMxLjA0OGMtMS40MjIsMC0yLjU3OS0wLjQ3NC0zLjQ2OS0xLjQyM2MtMC44OTEtMC45NDctMS4zMzYtMi4xNDYtMS4zMzYtMy41OTMgYzAtMS4zNzEsMC40MzItMi41NSwxLjI5OC0zLjUzN2MwLjg2NS0wLjk4NiwxLjk3LTEuNDgsMy4zMTUtMS40OGMxLjM5NywwLDIuNTE0LDAuNDU1LDMuMzU0LDEuMzY1IGMwLjgzOSwwLjkxLDEuMjU5LDIuMTI3LDEuMjU5LDMuNjUybC0wLjAxOSwwLjMyN2gtNy40MzhjMC4wNTEsMC45NDgsMC4zNjgsMS42OTgsMC45NTEsMi4yNDhjMC41ODMsMC41NTEsMS4yNjUsMC44MjcsMi4wNDcsMC44MjcgYzEuMjY4LDAsMi4xMjctMC41MzksMi41NzYtMS42MTRsMS41NzUsMC42NTNjLTAuMzA3LDAuNzMtMC44MTQsMS4zNDMtMS41MTgsMS44MzZDOTcuNDQ5LDMwLjgwMSw5Ni41ODQsMzEuMDQ4LDk1LjU1OSwzMS4wNDh6IE05OC4wOTYsMjQuODk4Yy0wLjAzOC0wLjUzOS0wLjI4Ni0xLjA1MS0wLjc0LTEuNTM4Yy0wLjQ1NS0wLjQ4Ny0xLjEzMi0wLjczLTIuMDI4LTAuNzNjLTAuNjUzLDAtMS4yMiwwLjIwNS0xLjcwMSwwLjYxNSBjLTAuNDgxLDAuNDEtMC44MTEsMC45NjEtMC45OSwxLjY1M0g5OC4wOTZ6Ii8+PHBhdGggZD0iTTEwNi45MzcsMzAuNzRoLTEuNzY5VjE2Ljk3OWg0LjY5YzEuMTY2LDAsMi4xNzUsMC4zODgsMy4wMjcsMS4xNjNjMC44NTIsMC43NzYsMS4yNzgsMS43NTMsMS4yNzgsMi45MzEgYzAsMS4xNzktMC40MjYsMi4xNTctMS4yNzgsMi45MzFjLTAuODUyLDAuNzc1LTEuODYxLDEuMTYzLTMuMDI3LDEuMTYzaC0yLjkyMVYzMC43NHogTTEwNi45MzcsMjMuNDc2aDIuOTYgYzAuNzQzLDAsMS4zMzktMC4yNTEsMS43ODctMC43NWMwLjQ0OS0wLjQ5OSwwLjY3My0xLjA1MSwwLjY3My0xLjY1M2MwLTAuNjAyLTAuMjI0LTEuMTUzLTAuNjczLTEuNjUyIGMtMC40NDktMC41LTEuMDQ1LTAuNzUtMS43ODctMC43NWgtMi45NlYyMy40NzZ6Ii8+PHBhdGggZD0iTTExNy4wODUsMzAuNzRoLTEuNzY4VjE2Ljk3OWgxLjc2OFYzMC43NHoiLz48cGF0aCBkPSJNMTIxLjYzOSwzMS4wNDhjLTEsMC0xLjgzNi0wLjI4OS0yLjUwOC0wLjg2NWMtMC42NzMtMC41NzYtMS4wMS0xLjMzOS0xLjAxLTIuMjg3IGMwLTEuMDI1LDAuMzk3LTEuODI5LDEuMTkyLTIuNDEyYzAuNzk0LTAuNTgzLDEuNzc0LTAuODc0LDIuOTQtMC44NzRjMS4wMzgsMCwxLjg5LDAuMTkyLDIuNTU2LDAuNTc2di0wLjI2OSBjMC0wLjY5Mi0wLjIzNy0xLjI0Ni0wLjcxMS0xLjY2MmMtMC40NzQtMC40MTctMS4wNTctMC42MjUtMS43NDktMC42MjVjLTAuNTEzLDAtMC45NzgsMC4xMjItMS4zOTMsMC4zNjUgYy0wLjQxNywwLjI0My0wLjcwMiwwLjU3Ni0wLjg1NiwwLjk5OWwtMS42MTQtMC42OTJjMC4yMTgtMC41NjMsMC42NDctMS4wODYsMS4yODgtMS41NjZjMC42NC0wLjQ4MSwxLjQ4Ni0wLjcyMSwyLjUzNy0wLjcyMSBjMS4yMDQsMCwyLjIwMywwLjM1MywyLjk5OCwxLjA1N2MwLjc5NCwwLjcwNSwxLjE5MSwxLjY5OCwxLjE5MSwyLjk3OXY1LjY4OWgtMS42OTF2LTEuMzA3aC0wLjA3NiBDMTI0LjAyOSwzMC41MDksMTIyLjk5NywzMS4wNDgsMTIxLjYzOSwzMS4wNDh6IE0xMjEuOTI3LDI5LjQzNGMwLjczLDAsMS4zOTMtMC4yNzMsMS45OS0wLjgxNyBjMC41OTYtMC41NDQsMC44OTMtMS4xODgsMC44OTMtMS45MzFjLTAuNDk5LTAuNDEtMS4yNDktMC42MTUtMi4yNDgtMC42MTVjLTAuODU5LDAtMS41MDYsMC4xODYtMS45NDEsMC41NTcgYy0wLjQzNiwwLjM3Mi0wLjY1MywwLjgwNy0wLjY1MywxLjMwN2MwLDAuNDYxLDAuMTk4LDAuODI2LDAuNTk2LDEuMDk2QzEyMC45NiwyOS4yOTgsMTIxLjQxNSwyOS40MzQsMTIxLjkyNywyOS40MzR6Ii8+PHBhdGggZD0iTTEzMC4zNDcsMzQuODkxaC0xLjgyNmwyLjE5MS00Ljc0N2wtMy44ODItOC44MjJoMS45MjJsMi44MDcsNi43NjZoMC4wMzhsMi43MjktNi43NjZoMS45MjJMMTMwLjM0NywzNC44OTF6Ii8+PHBhdGggZD0iTTguNjI5LDIzLjYyNmMwLTQuMzk1LDAuMDAyLTguNzkxLTAuMDAyLTEzLjE4NkM4LjYyNyw5LjksOC43MzIsOS40MDgsOS4xMTQsOSBDOS4yNjIsOC44NDIsOS4zNjksOC44LDkuNTUyLDguOTg1YzIuOTU4LDMuMDE4LDUuOTIyLDYuMDI5LDguODg2LDkuMDRjMS45MiwxLjk1LDMuODM4LDMuOTAxLDUuNzY1LDUuODQ0IGMwLjE4NywwLjE4OCwwLjIwMywwLjI4NywwLjAwNSwwLjQ4NGMtNC43MTQsNC42ODctOS40MjQsOS4zNzktMTQuMTIxLDE0LjA4MmMtMC4yODcsMC4yODctMC40ODgsMC4yNTctMC43NjQsMC4wNDUgYy0wLjUwMy0wLjM4Ny0wLjY5Ni0wLjkwNi0wLjY5Ni0xLjUyM2MwLjAwMS0yLjYwMy0wLjAwNC01LjIwNy0wLjAwNS03LjgxYy0wLjAwMS0xLjg0MSwwLTMuNjgxLDAtNS41MjIgQzguNjI0LDIzLjYyNiw4LjYyNywyMy42MjYsOC42MjksMjMuNjI2eiIvPjxwYXRoIGQ9Ik0xMC4zMTksOC40OTljMC4zNi0wLjAwMywwLjYxMywwLjEwMSwwLjg1NywwLjIzOGM2LjAyLDMuMzczLDEyLjAzOSw2Ljc0OCwxOC4wNjIsMTAuMTE0IGMwLjI3NywwLjE1NSwwLjI3MSwwLjI0MSwwLjA1NywwLjQ1MWMtMS4zNDYsMS4zMjUtMi42ODIsMi42Ni00LjAxNywzLjk5NmMtMC4xNDQsMC4xNDQtMC4yMzIsMC4yMjgtMC40MjUsMC4wMzEgYy00Ljc4OS00Ljg4NC05LjU4Ni05Ljc2Mi0xNC4zODEtMTQuNjQxQzEwLjQzNCw4LjY0OCwxMC40MDEsOC41OTksMTAuMzE5LDguNDk5eiIvPjxwYXRoIGQ9Ik0xMS42NjYsMzguMzI0YzQuMzctNC40MTcsOC43NDItOC44MywxMy4xMDEtMTMuMjU3YzAuMjcxLTAuMjc1LDAuMzk2LTAuMjM4LDAuNjM5LDAuMDE0IGMxLjEwNywxLjE1MywyLjIzMSwyLjI5MSwzLjM2LDMuNDIzYzAuMTk5LDAuMTk5LDAuMjE1LDAuMjgxLTAuMDU0LDAuNDI4Yy01LjYwOSwzLjA3LTExLjIxNCw2LjE1LTE2LjgxOSw5LjIyNyBDMTEuOCwzOC4yMSwxMS43MTQsMzguMjkzLDExLjY2NiwzOC4zMjR6Ii8+PHBhdGggZD0iTTM2LjYyOCwyMy43NDhjLTAuMDE5LDAuNDk1LTAuMjUzLDAuODQzLTAuNjA2LDEuMTA0Yy0wLjI2MiwwLjE5My0wLjU1LDAuMzUyLTAuODM2LDAuNTEgYy0xLjY5NiwwLjkzOC0zLjM5NywxLjg2Ni01LjA4OSwyLjgxYy0wLjIyOCwwLjEyNy0wLjM2NCwwLjEyMi0wLjU1My0wLjA3NGMtMS4yMDUtMS4yNDQtMi40Mi0yLjQ3OS0zLjY0Mi0zLjcwNiBjLTAuMTc4LTAuMTc5LTAuMTgzLTAuMjc3LDAtMC40NTZjMS40MjQtMS40MDMsMi44NC0yLjgxMyw0LjI0OS00LjIzYzAuMTY2LTAuMTY3LDAuMjg1LTAuMTg2LDAuNDkzLTAuMDY5IGMxLjY3NSwwLjk0OSwzLjM1OCwxLjg4NSw1LjAzOCwyLjgyN0MzNi4yMDEsMjIuNzU2LDM2LjYwNSwyMy4xMzMsMzYuNjI4LDIzLjc0OHoiLz48L3N2Zz4=" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="bottom-footer">
+                  
                 <div class="bottom-left-footer">
                     <ul>
                         <li class="footer-legals">Terms of Services</li>
@@ -212,19 +539,28 @@
                         <li class="footer-legals">Delivery Locations</li>
                         <li class="footer-legals">Do Not Sell My Personal Information</li>
                         
-                        <li class="footer-legals">&copy;DoorDash</li>
+                        <li class="footer-legals">&copy;2024 DoorDash</li>
                     </ul>
+                    
+                    <div class="forms">
+                        <select class="dropdown">
+                            <h2>English</h2>
+                            <option value="option1">English(US)</option>
+                            <option value="option2">English(UK)</option>
+                        </select>
+                    </div>
+
                 </div>
                 
                 </div>
                 <div class="bottom-right-footer">
                     <ul>
-                        <li><i class="fab fa-facebook-square social"></i></li>
-                        <li><i class="fab fa-twitter social"></i></li>
-                        <li><i class="fab fa-instagram social"></i></li>
+                        <li><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InN0eWxlc19fU3R5bGVkSW5saW5lU3ZnLXNjLTEybDh2dmktMCBocFZ1aUQiPjxwYXRoIGQ9Ik0yMSAxMkMyMSA3LjAyOTQzIDE2Ljk3MDYgMyAxMiAzQzcuMDI5NDMgMyAzIDcuMDI5NDMgMyAxMkMzIDE2LjQ5MjIgNi4yOTExNyAyMC4yMTU1IDEwLjU5MzggMjAuODkwN1YxNC42MDE2SDguMzA4NTlWMTJIMTAuNTkzOFYxMC4wMTcyQzEwLjU5MzggNy43NjE1NiAxMS45Mzc0IDYuNTE1NjIgMTMuOTkzMiA2LjUxNTYyQzE0Ljk3NzkgNi41MTU2MiAxNi4wMDc4IDYuNjkxNDEgMTYuMDA3OCA2LjY5MTQxVjguOTA2MjVIMTQuODcyOUMxMy43NTQ5IDguOTA2MjUgMTMuNDA2MiA5LjYwMDAxIDEzLjQwNjIgMTAuMzExN1YxMkgxNS45MDIzTDE1LjUwMzMgMTQuNjAxNkgxMy40MDYyVjIwLjg5MDdDMTcuNzA4OCAyMC4yMTU1IDIxIDE2LjQ5MjIgMjEgMTJaIiBmaWxsPSIjQzRDNEM0Ii8+PC9zdmc+" alt=""></i></li>
+                        <li><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InN0eWxlc19fU3R5bGVkSW5saW5lU3ZnLXNjLTEybDh2dmktMCBocFZ1aUQiPjxwYXRoIGQ9Ik04LjI4OTYgMjBDMTUuODM2OCAyMCAxOS45NjQ4IDEzLjg0MzggMTkuOTY0OCA4LjUwNTE1QzE5Ljk2NDggOC4zMzAzIDE5Ljk2NDggOC4xNTYyMyAxOS45NTI4IDcuOTgyOTVDMjAuNzU1OSA3LjQxMTA1IDIxLjQ0OTEgNi43MDI5MyAyMiA1Ljg5MTc2QzIxLjI1MTEgNi4yMTg0NyAyMC40NTY3IDYuNDMyNzMgMTkuNjQzMiA2LjUyNzM5QzIwLjQ5OTggNi4wMjI0OSAyMS4xNDA5IDUuMjI4MzggMjEuNDQ3MiA0LjI5Mjg1QzIwLjY0MTcgNC43NjM0MyAxOS43NjA1IDUuMDk1MDcgMTguODQxNiA1LjI3MzQ2QzE4LjIyMjkgNC42MjU3NyAxNy40MDQ3IDQuMTk2ODkgMTYuNTEzNSA0LjA1MzE4QzE1LjYyMjMgMy45MDk0NyAxNC43MDc5IDQuMDU4OTQgMTMuOTExNiA0LjQ3ODQ4QzEzLjExNTQgNC44OTgwMSAxMi40ODE5IDUuNTY0MjEgMTIuMTA5IDYuMzczOThDMTEuNzM2MSA3LjE4Mzc2IDExLjY0NDYgOC4wOTE5NiAxMS44NDg4IDguOTU4MDVDMTAuMjE3NCA4Ljg3NzUzIDguNjIxNDQgOC40NjAxMyA3LjE2NDUxIDcuNzMyOTRDNS43MDc1OSA3LjAwNTc2IDQuNDIyMjcgNS45ODUwNSAzLjM5MiA0LjczNzA4QzIuODY3MjcgNS42MjY0NSAyLjcwNjU2IDYuNjc5MjkgMi45NDI1OCA3LjY4MTIzQzMuMTc4NjEgOC42ODMxNyAzLjc5MzYyIDkuNTU4ODggNC42NjI0IDEwLjEzMDFDNC4wMDkzOSAxMC4xMTEgMy4zNzA2MiA5LjkzNzU3IDIuOCA5LjYyNDM5QzIuOCA5LjY0MDkzIDIuOCA5LjY1ODI2IDIuOCA5LjY3NTU5QzIuODAwMjYgMTAuNjA4MyAzLjEyODIxIDExLjUxMjMgMy43MjgyMyAxMi4yMzQxQzQuMzI4MjQgMTIuOTU1OSA1LjE2MzM4IDEzLjQ1MTIgNi4wOTIgMTMuNjM1OUM1LjQ4NzkgMTMuNzk4MSA0Ljg1NDA2IDEzLjgyMTggNC4yMzkyIDEzLjcwNTJDNC41MDE0MSAxNC41MDc5IDUuMDExODkgMTUuMjA5OSA1LjY5OTI2IDE1LjcxMjlDNi4zODY2MiAxNi4yMTYgNy4yMTY0OSAxNi40OTQ5IDguMDcyOCAxNi41MTA3QzYuNjE5NzkgMTcuNjM1MSA0LjgyNDg1IDE4LjI0NTQgMi45NzY4IDE4LjI0MzZDMi42NTAzMiAxOC4yNDI5IDIuMzI0MTYgMTguMjIzNSAyIDE4LjE4NTNDMy44NzY1MSAxOS4zNzA5IDYuMDU5OTMgMTkuOTk5OCA4LjI4OTYgMTkuOTk2OCIgZmlsbD0iI0M0QzRDNCIvPjwvc3ZnPg==" alt=""></i></li>
+                        <li><image src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9InN0eWxlc19fU3R5bGVkSW5saW5lU3ZnLXNjLTEybDh2dmktMCBocFZ1aUQiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTIuMDAwOCAzQzkuNTU2NTcgMyA5LjI0OTgxIDMuMDEwNjkgOC4yODk4IDMuMDU0MzhDNy4zMzE2NyAzLjA5ODI1IDYuNjc3NjYgMy4yNDk5NCA2LjEwNTQxIDMuNDcyNUM1LjUxMzQ2IDMuNzAyMzggNS4wMTEzMyA0LjAwOTg5IDQuNTExMDggNC41MTAzM0M0LjAxMDQ1IDUuMDEwNTggMy43MDI5NCA1LjUxMjcxIDMuNDcyMzIgNi4xMDQ0N0MzLjI0OTE5IDYuNjc2OTEgMy4wOTczMSA3LjMzMTExIDMuMDU0MTkgOC4yODg4N0MzLjAxMTI1IDkuMjQ4ODggMyA5LjU1NTgyIDMgMTIuMDAwMUMzIDE0LjQ0NDQgMy4wMTA4OCAxNC43NTAyIDMuMDU0MzggMTUuNzEwMkMzLjA5ODQ0IDE2LjY2ODMgMy4yNTAxMyAxNy4zMjIzIDMuNDcyNSAxNy44OTQ2QzMuNzAyNTcgMTguNDg2NSA0LjAxMDA3IDE4Ljk4ODcgNC41MTA1MiAxOS40ODg5QzUuMDEwNTggMTkuOTg5NSA1LjUxMjcxIDIwLjI5NzggNi4xMDQyOCAyMC41Mjc3QzYuNjc2OTEgMjAuNzUwMiA3LjMzMTExIDIwLjkwMTkgOC4yODkwNSAyMC45NDU4QzkuMjQ5MDYgMjAuOTg5NSA5LjU1NTYzIDIxLjAwMDIgMTEuOTk5NyAyMS4wMDAyQzE0LjQ0NDIgMjEuMDAwMiAxNC43NSAyMC45ODk1IDE1LjcxIDIwLjk0NThDMTYuNjY4MSAyMC45MDE5IDE3LjMyMjkgMjAuNzUwMiAxNy44OTU1IDIwLjUyNzdDMTguNDg3MyAyMC4yOTc4IDE4Ljk4ODcgMTkuOTg5NSAxOS40ODg3IDE5LjQ4ODlDMTkuOTg5NCAxOC45ODg3IDIwLjI5NjkgMTguNDg2NSAyMC41Mjc1IDE3Ljg5NDhDMjAuNzQ4NyAxNy4zMjIzIDIwLjkwMDYgMTYuNjY4MSAyMC45NDU2IDE1LjcxMDRDMjAuOTg4NyAxNC43NTA0IDIxIDE0LjQ0NDQgMjEgMTIuMDAwMUMyMSA5LjU1NTgyIDIwLjk4ODcgOS4yNDkwNiAyMC45NDU2IDguMjg5MDVDMjAuOTAwNiA3LjMzMDkyIDIwLjc0ODcgNi42NzY5MSAyMC41Mjc1IDYuMTA0NjZDMjAuMjk2OSA1LjUxMjcxIDE5Ljk4OTQgNS4wMTA1OCAxOS40ODg3IDQuNTEwMzNDMTguOTg4MSA0LjAwOTcgMTguNDg3NSAzLjcwMjE5IDE3Ljg5NSAzLjQ3MjVDMTcuMzIxMiAzLjI0OTk0IDE2LjY2NjggMy4wOTgyNSAxNS43MDg3IDMuMDU0MzhDMTQuNzQ4NyAzLjAxMDY5IDE0LjQ0MzEgMyAxMS45OTggM0gxMi4wMDA4Wk0xMS43MDA5IDQuNjIxOEwxMi4wMDA4IDQuNjIxODlDMTQuNDAzOSA0LjYyMTg5IDE0LjY4ODcgNC42MzA1MiAxNS42Mzc2IDQuNjczNjRDMTYuNTE1MSA0LjcxMzc3IDE2Ljk5MTQgNC44NjAzOSAxNy4zMDg2IDQuOTgzNThDMTcuNzI4NiA1LjE0NjcxIDE4LjAyODEgNS4zNDE3MSAxOC4zNDI5IDUuNjU2NzFDMTguNjU3OSA1Ljk3MTcyIDE4Ljg1MjkgNi4yNzE3MiAxOS4wMTY0IDYuNjkxNzNDMTkuMTM5NiA3LjAwODYgMTkuMjg2NCA3LjQ4NDg2IDE5LjMyNjMgOC4zNjIzN0MxOS4zNjk1IDkuMzExMTMgMTkuMzc4OCA5LjU5NjEzIDE5LjM3ODggMTEuOTk4QzE5LjM3ODggMTQuMzk5OSAxOS4zNjk1IDE0LjY4NDkgMTkuMzI2MyAxNS42MzM3QzE5LjI4NjIgMTYuNTExMiAxOS4xMzk2IDE2Ljk4NzUgMTkuMDE2NCAxNy4zMDQzQzE4Ljg1MzMgMTcuNzI0MyAxOC42NTc5IDE4LjAyMzQgMTguMzQyOSAxOC4zMzgyQzE4LjAyNzkgMTguNjUzMiAxNy43Mjg4IDE4Ljg0ODIgMTcuMzA4NiAxOS4wMTE0QzE2Ljk5MTggMTkuMTM1MSAxNi41MTUxIDE5LjI4MTQgMTUuNjM3NiAxOS4zMjE1QzE0LjY4ODkgMTkuMzY0NiAxNC40MDM5IDE5LjM3NCAxMi4wMDA4IDE5LjM3NEM5LjU5NzYyIDE5LjM3NCA5LjMxMjggMTkuMzY0NiA4LjM2NDA0IDE5LjMyMTVDNy40ODY1MyAxOS4yODEgNy4wMTAyOCAxOS4xMzQ0IDYuNjkyODQgMTkuMDExMkM2LjI3MjgzIDE4Ljg0OCA1Ljk3MjgzIDE4LjY1MyA1LjY1NzgzIDE4LjMzOEM1LjM0MjgyIDE4LjAyMyA1LjE0NzgyIDE3LjcyMzggNC45ODQzMiAxNy4zMDM2QzQuODYxMTMgMTYuOTg2NyA0LjcxNDMyIDE2LjUxMDUgNC42NzQzOCAxNS42MzI5QzQuNjMxMjUgMTQuNjg0MiA0LjYyMjYzIDE0LjM5OTIgNC42MjI2MyAxMS45OTU4QzQuNjIyNjMgOS41OTIzOCA0LjYzMTI1IDkuMzA4ODggNC42NzQzOCA4LjM2MDEyQzQuNzE0NTEgNy40ODI2MSA0Ljg2MTEzIDcuMDA2MzUgNC45ODQzMiA2LjY4OTFDNS4xNDc0NSA2LjI2OTEgNS4zNDI4MiA1Ljk2OTA5IDUuNjU3ODMgNS42NTQwOUM1Ljk3MjgzIDUuMzM5MDkgNi4yNzI4MyA1LjE0NDA4IDYuNjkyODQgNC45ODA1OEM3LjAxMDA5IDQuODU2ODMgNy40ODY1MyA0LjcxMDU4IDguMzY0MDQgNC42NzAyN0M5LjE5NDMgNC42MzI3NyA5LjUxNjA2IDQuNjIxNTIgMTEuMTkzNCA0LjYxOTY0VjQuNjIxODlDMTEuMzUwMiA0LjYyMTY1IDExLjUxODkgNC42MjE3MiAxMS43MDA5IDQuNjIxOFpNMTUuNzI1IDcuMTk1OTJDMTUuNzI1IDYuNTk5NDcgMTYuMjA4OCA2LjExNjI4IDE2LjgwNSA2LjExNjI4QzE3LjQwMTMgNi4xMTYyOCAxNy44ODUgNi41OTk2NiAxNy44ODUgNy4xOTU5MkMxNy44ODUgNy43OTIxNyAxNy40MDEzIDguMjc1OTMgMTYuODA1IDguMjc1OTNDMTYuMjA4OCA4LjI3NTkzIDE1LjcyNSA3Ljc5MjE3IDE1LjcyNSA3LjE5NTkyWk0xMi4wMDA2IDcuMzc4MTdDOS40NDgyNyA3LjM3ODI3IDcuMzc4OTEgOS40NDc2OSA3LjM3ODkxIDEyLjAwMDFDNy4zNzg5MSAxNC41NTI2IDkuNDQ4MzcgMTYuNjIxMSAxMi4wMDA4IDE2LjYyMTFDMTQuNTUzMyAxNi42MjExIDE2LjYyMiAxNC41NTI2IDE2LjYyMiAxMi4wMDAxQzE2LjYyMiA5LjQ0NzYzIDE0LjU1MzEgNy4zNzgxNyAxMi4wMDA2IDcuMzc4MTdaTTE1LjAwMDkgMTIuMDAwMUMxNS4wMDA5IDEwLjM0MzEgMTMuNjU3NyA5LjAwMDA2IDEyLjAwMDkgOS4wMDAwNkMxMC4zNDM5IDkuMDAwMDYgOS4wMDA4NSAxMC4zNDMxIDkuMDAwODUgMTIuMDAwMUM5LjAwMDg1IDEzLjY1NjkgMTAuMzQzOSAxNS4wMDAxIDEyLjAwMDkgMTUuMDAwMUMxMy42NTc3IDE1LjAwMDEgMTUuMDAwOSAxMy42NTY5IDE1LjAwMDkgMTIuMDAwMVoiIGZpbGw9IiNDNEM0QzQiLz48L3N2Zz4=" alt=""></i></li>
                     </ul>
                 </div>
             </div>
         </div>
-                    </body>
+    </body>
 </html>
